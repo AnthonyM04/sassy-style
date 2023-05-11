@@ -7,6 +7,19 @@
   text-align: center;
 }
 
+.alien-guy {
+  height: 200px;
+  filter: grayscale(1);
+  width: 200px;
+  rotate: (360deg);
+  &:hover {
+    filter: grayscale(0);
+    transform: rotate(18000deg);
+    transition: 1.5s ease-in;
+  }
+  
+}
+
 // SASS
 
 // COLORS
@@ -31,7 +44,6 @@ h3 {
   color: $primary_color;
 }
 
-
 .terra {
   padding: 10px;
   background: variables.$colorGradTwo;
@@ -40,11 +52,49 @@ h3 {
     };
 }
 
-
 ul {
   background: variables.$colorGrad;
   border: 10px solid $primaryColor;
   li {
     font-weight: 700;
   }
+}
+
+.button-banner {
+  background-color: rgb(234, 0, 255);
+  padding: 10px;
+}
+
+button {
+  padding: 10px;
+  background-color: black;
+  color: $secondaryColor;
+  &:hover {
+    filter: drop-shadow(0 0 0.75rem rgb(20, 220, 77));
+    background-color: rgb(47, 255, 0);
+    color: $secondaryColor;
+    transform: scale(1.1);
+    font-weight: 700;
+  };
+  & .button-prime {
+    font-size: 30px;
+  }
+}
+
+.racing {
+  width: 100px;
+  height:  100px;
+  background-color: rgba(0, 255, 94, 0.5);
+  position: relative;
+  
+}
+
+.racing-ufo img {
+  height: 100px;
+  // position: 1000px;
+}
+
+%button {
+  background-color: red;
+  color: black;
 }
