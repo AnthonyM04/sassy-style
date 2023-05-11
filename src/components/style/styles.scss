@@ -1,0 +1,6 @@
+@use 'variables' as var;
+@use 'core' as core;
+
+h3 {
+    color: var.$colorMain;
+}
