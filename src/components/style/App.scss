@@ -1,0 +1,41 @@
+// CSS
+
+.App {
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+}
+
+// SASS
+
+// COLORS
+$primaryColor: #F00;
+$secondaryColor: #FFFFFF;
+
+
+// sass considers these the same variable
+$primary-color: Red;
+$primary_color: Green;
+
+h1 {
+  color: $primaryColor;
+}
+
+h2 {
+  $primaryColor: #0f0 !global;
+  background-color: $primaryColor;
+}
+
+h3 {
+  color: $primary_color;
+}
+
+
+.terra {
+  padding: 10px;
+  background-color: $primary-color;
+    h3{
+      color: $secondaryColor;
+    };
+    
+}
